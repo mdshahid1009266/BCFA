@@ -1,0 +1,39 @@
+#coustomerInfo{
+    display: block;
+}
+#coustomerInfo h1{
+    text-align: center;
+}
+#coustomerInfo .coustomerInfoContainer{
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    word-wrap: break-word;
+}
+#coustomerInfo .coustomerInfoContainer .infoItem h3{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#coustomerInfo .coustomerInfoContainer .infoItem p{
+    /* padding-bottom: 2px; */
+    text-align: left; 
+    /* border: 2px solid transparent; */
+}
+#coustomerInfo .coustomerInfoContainer .infoItem input{
+    background-color: #fff;
+    /* border-bottom: 2px solid grey; */
+    text-align: left !important;
+}
+#coustomerInfo .coustomerInfoContainer .infoItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(226, 226, 226, 0.32); */
+    border-top: 1px solid rgb(204, 204, 204);
+    padding: 10px 5px;
+    margin: 5px 0px;
+}
+#coustomerInfo .coustomerInfoContainer .infoItem h3,
+#coustomerInfo .coustomerInfoContainer .infoItem p,
+#coustomerInfo .coustomerInfoContainer .infoItem input{
+    flex: 1;
+    min-width: 45%;
+}

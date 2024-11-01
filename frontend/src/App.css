@@ -1,0 +1,157 @@
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+/* Modal start */
+#modal {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Modal end */
+/* Login start */
+.loginbtn {
+    background-color: #2e7df4;
+    /* background-color: #001d3d; */
+    color: white;
+}
+
+/* Login end */
+/* Home start */
+.actionbtn {
+    background-color: #2e7df4;
+    /* background-color: #001d3d; */
+    color: white;
+    min-width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Home end */
+#spinner {
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+}
+
+
+.loader {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 6.7px;
+    background: conic-gradient(from 135deg at top, #000 90deg, #0000 0) 0 calc(50% - 4.5px)/19px 9.5px,
+        radial-gradient(farthest-side at bottom left, #0000 calc(100% - 6.7px), #000 calc(100% - 5.6px) 99%, #0000) top right/50% 50% content-box content-box,
+        radial-gradient(farthest-side at top, #0000 calc(100% - 6.7px), #000 calc(100% - 5.6px) 99%, #0000) bottom /100% 50% content-box content-box;
+    background-repeat: no-repeat;
+    animation: spinner-v8og74 1s infinite linear;
+}
+
+@keyframes spinner-v8og74 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 12px 15px;
+  }
+  
+  .responsive-table th {
+    background-color: #009879;
+    color: #ffffff;
+  }
+  
+  .responsive-table tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .responsive-table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .responsive-table tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .responsive-table button {
+    padding: 8px 15px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .responsive-table button:hover {
+    background-color: #ff1c33;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-table thead {
+      display: none;
+    }
+  
+    .responsive-table, 
+    .responsive-table tbody, 
+    .responsive-table tr, 
+    .responsive-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .responsive-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .responsive-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      border-bottom: 1px solid black;
+    }
+  
+    .responsive-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
