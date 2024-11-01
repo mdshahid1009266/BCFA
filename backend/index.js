@@ -3,7 +3,13 @@ const app = express();
 app.use(express.json())
 
 import cors from "cors"
-app.use(cors());
+app.use(cors(
+    {
+        origin: "https://clientbcfa.vercel.app",
+        origin: true,
+        credentials: true,
+    }
+));
 
 
 
