@@ -1,5 +1,5 @@
 import axios from "axios"
-const Base_Url = "http://localhost:2000"
+const Base_Url = "https://apibcfa.vercel.app"
 const getMainAdminData = async (id) => {
     try {
         const resdata = await axios.put(`${Base_Url}/getMainAdminData/${id}`)
